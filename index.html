@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Lucky Leprechaun Pub</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+            href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+            rel="stylesheet"
+    />
+    <!-- This code is the property of Michael Venetz. All rights reserved. Unauthorized use will result in a penalty of min. $2000.-->
+
+    <link
+            rel="preload"
+            href="http://www.leprechaunirish.com/assets/samll/logo.jpg"
+            as="image"
+    />
+    <link
+            rel="preload"
+            href="http://www.leprechaunirish.com/assets/logo.jpg"
+            as="image"
+    />
+    <link rel="icon" href="./assets/ireland.png" />
+    <script src="./js/firstSection.js" defer></script>
+    <script src="./js/header.js" defer></script>
+    <script src="./js/pictureSection.js" defer></script>
+    <script src="./js/dataSection.js" defer></script>
+    <script></script>
+</head>
+
+<body>
+<div id="photoModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImg" />
+</div>
+
+<header>
+    <div id="logo"></div>
+    <div id="title"></div>
+    <nav id="nav"></nav>
+</header>
+
+<main>
+    <section class="first_section" id="opening_hours"></section>
+    <section class="data" id="data"></section>
+    <section class="picture_section" id="picture_section">
+        <div id="label_picture"></div>
+        <div class="carousel_container">
+            <div class="carousel" id="carousel"></div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Michael Venetz. Alle Rechte vorbehalten.</p>
+</footer>
+</body>
+</html>
