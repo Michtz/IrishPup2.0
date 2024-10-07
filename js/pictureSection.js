@@ -3,11 +3,11 @@ This code is the property of Michael Venetz. All rights reserved. Unauthorized u
 */
 
 const imagePaths = [
-    'http://www.leprechaunirish.com/assets/picture1.jpg',
-    'http://www.leprechaunirish.com/assets/picture2.jpg',
-    'http://www.leprechaunirish.com/assets/picture3.jpg',
-    'http://www.leprechaunirish.com/assets/picture4.jpg',
-    'http://www.leprechaunirish.com/assets/picture5.jpg',
+    'https://www.leprechaunirish.com/assets/picture1.avif',
+    'https://www.leprechaunirish.com/assets/picture2.avif',
+    'https://www.leprechaunirish.com/assets/picture3.avif',
+    'https://www.leprechaunirish.com/assets/picture4.avif',
+    'https://www.leprechaunirish.com/assets/picture5.avif',
 ];
 
 const carousel = document.getElementById('carousel');

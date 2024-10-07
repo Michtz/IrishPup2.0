@@ -2,24 +2,24 @@
 This code is the property of Michael Venetz. All rights reserved. Unauthorized use will result in a penalty of min. $2000.
 */
 
-const largeLogoUrl = 'http://www.leprechaunirish.com/assets/kobold2.png';
+const largeLogoUrl = 'https://www.leprechaunirish.com/assets/kobold2.png';
 
 const navItems = [
     {
         id: 'contact_icon',
         href: '#address_info',
-        src: 'http://www.leprechaunirish.com/assets/mobile.png',
+        src: 'https://www.leprechaunirish.com/assets/mobile.png',
         alt: 'mobile',
     },
     {
         id: 'location_icon',
         href: '#location',
-        src: 'http://www.leprechaunirish.com/assets/gps.png',
+        src: 'https://www.leprechaunirish.com/assets/gps.png',
         alt: 'gps',
     },
     {
         id: 'facebook_icon',
-        src: 'http://www.leprechaunirish.com/assets/facebook.png',
+        src: 'https://www.leprechaunirish.com/assets/facebook.png',
         href: 'https://www.facebook.com/luckyleprechaunirishbarsiemreap',
         alt: 'facebook',
     },
@@ -74,18 +74,6 @@ const addImageToHeader = () => {
         alt: 'leprechaun',
     });
 
-    /* flag version
-  *   Object.assign(cambodianFlag, {
-      className: 'flag',
-      src: '../assets/cambodianFlag.png',
-      alt: 'cambodianFlags',
-    });
-
-    Object.assign(irlandFlag, {
-      className: 'flag',
-      src: '../assets/irlandFlag.png',
-      alt: 'irlandFlag',
-    });*/
     container.appendChild(cambodianFlag);
     container.appendChild(irlandFlag);
     logo.appendChild(container);

@@ -2,8 +2,8 @@
 This code is the property of Michael Venetz. All rights reserved. Unauthorized use will result in a penalty of min. $2000.
 */
 
-const smallImageUrl = 'http://www.leprechaunirish.com/assets/small/guinnes.jpg';
-const largeImageUrl = 'http://www.leprechaunirish.com/assets/guinnes.jpg';
+const smallImageUrl = 'https://www.leprechaunirish.com/assets/small/guinnes.jpg';
+const largeImageUrl = 'https://www.leprechaunirish.com/assets/guinnes.avif';
 
 const setBackgroundImage = (imageUrl) => {
     const section = document.getElementById('opening_hours');
@@ -30,11 +30,6 @@ const loadImagesSequentially = async () => {
 };
 
 document.addEventListener('DOMContentLoaded', loadImagesSequentially);
-//
-//
-//
-//
-//
 
 const isBetween3PMAnd3AM = () =>
     (new Date().getUTCHours() + 7) % 24 >= 15 ||

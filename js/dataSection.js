@@ -2,8 +2,8 @@
 This code is the property of Michael Venetz. All rights reserved. Unauthorized use will result in a penalty of min. $2000.
 */
 
-const smallLogoUrl1 = 'http://www.leprechaunirish.com/assets/small/logo.jpg';
-const largeLogoUrl1 = 'http://www.leprechaunirish.com/assets/logo.jpg';
+const smallLogoUrl1 = 'https://www.leprechaunirish.com/assets/small/logo.jpg';
+const largeLogoUrl1 = 'https://www.leprechaunirish.com/assets/logo.avif';
 
 const createElement = (tag, props = {}, ...children) => {
     const element = document.createElement(tag);
