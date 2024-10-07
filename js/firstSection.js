@@ -4,6 +4,7 @@ This code is the property of Michael Venetz. All rights reserved. Unauthorized u
 
 const smallImageUrl = 'https://www.leprechaunirish.com/assets/small/guinnes.jpg';
 const largeImageUrl = 'https://www.leprechaunirish.com/assets/guinnes.avif';
+const mobileImageUrl = 'https://www.leprechaunirish.com/assets/mobile/guinnes.avif';
 
 const setBackgroundImage = (imageUrl) => {
     const section = document.getElementById('opening_hours');
@@ -18,18 +19,32 @@ const loadImage = (url) =>
         img.src = url;
     });
 
+const getAppropriateImageUrl = () => {
+    if (window.innerWidth < 768) return mobileImageUrl;
+    else return largeImageUrl;
+};
+
 const loadImagesSequentially = async () => {
     try {
         const smallSrc = await loadImage(smallImageUrl);
         setBackgroundImage(smallSrc);
-        const largeSrc = await loadImage(largeImageUrl);
+        const appropriateImageUrl = getAppropriateImageUrl();
+        const largeSrc = await loadImage(appropriateImageUrl);
         setBackgroundImage(largeSrc);
     } catch (error) {
         console.error('Fehler beim Laden des Bildes:', error);
     }
 };
 
-document.addEventListener('DOMContentLoaded', loadImagesSequentially);
+const handleResize = () => {
+    const appropriateImageUrl = getAppropriateImageUrl();
+    setBackgroundImage(appropriateImageUrl);
+};
+
+document.addEventListener('DOMContentLoaded', () => {
+    loadImagesSequentially();
+    window.addEventListener('resize', handleResize);
+});
 
 const isBetween3PMAnd3AM = () =>
     (new Date().getUTCHours() + 7) % 24 >= 15 ||
